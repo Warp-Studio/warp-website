@@ -1064,7 +1064,7 @@
     /* ─── PRICING ──────────────────────────────────── */
     .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       margin-top: 64px;
     }
@@ -1548,7 +1548,7 @@
           <div class="mockup-stats">
             <div class="ms-card">
               <div class="ms-label">This Month</div>
-              <div class="ms-val green">847</div>
+              <div class="ms-val green">22,000+</div>
               <div style="font-size:0.7rem;color:var(--muted)">invoices auto-sent</div>
             </div>
             <div class="ms-card">
@@ -1827,7 +1827,7 @@
       <div class="cta-actions">
         <a href="https://apps.shopify.com/gst-invoice-india-1" target="_blank" class="btn btn-gold">Install on Shopify —
           Free →</a>
-        <a href="mailto:hello@warpstudio.in" class="btn btn-ghost">Talk to the team</a>
+        <a href="mailto:warpstudio.io@gmail.com" class="btn btn-ghost">Talk to the team</a>
       </div>
     </div>
   </section>
@@ -1859,9 +1859,7 @@
         <div class="footer-col-title">Company</div>
         <ul class="footer-links">
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="mailto:hello@warpstudio.in">Contact</a></li>
+          <li><a href="mailto:warpstudio.io@gmail.com">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -1869,8 +1867,6 @@
         <ul class="footer-links">
           <li><a href="#">GST Guide for Shopify</a></li>
           <li><a href="#">HSN Code Lookup</a></li>
-          <li><a href="#">GSTR-1 Filing Help</a></li>
-          <li><a href="#">Support Center</a></li>
         </ul>
       </div>
     </div>
@@ -1934,10 +1930,10 @@
         if (e.isIntersecting) {
           const items = e.target.querySelectorAll('.stat-item');
           const data = [
-            { val: 500, suffix: '+' },
-            { val: 1, suffix: 'M+' },
-            { val: 4.9, suffix: '★' },
-            { val: 100, suffix: '%' }
+          { val: 50, suffix: '+' },
+          { val: 22,   suffix: 'K+' },
+          { val: 5.0, suffix: '★' },
+          { val: 100, suffix: '%' }
           ];
           items.forEach((item, i) => {
             if (data[i]) {
