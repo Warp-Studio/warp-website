@@ -1093,6 +1093,8 @@
       position: absolute;
       inset: 0;
       background: radial-gradient(ellipse at top, rgba(123, 110, 246, 0.1), transparent 60%);
+      pointer-events: none;
+      /* 👈 THIS FIXES IT */
     }
 
     .popular-badge {
@@ -1576,32 +1578,32 @@
     <div class="features-grid reveal">
       <div class="feat-card">
         <!-- <div class="feat-icon" style="background:rgba(123,110,246,0.12);">🧮</div> -->
-        <div class="feat-title">Simplify your GST compliance</div>
+        <div class="feat-title">SIMPLIFY YOUR GST COMPLIANCE</div>
         <div class="feat-desc">Built to match the flexibility Indian GST demands</div>
       </div>
       <div class="feat-card">
         <!-- <div class="feat-icon" style="background:rgba(232,197,74,0.12);">🪪</div> -->
-        <div class="feat-title">Automate Invoice Emails</div>
+        <div class="feat-title">AUTOMATE INVOICE EMAILS</div>
         <div class="feat-desc">Send Invoices Automatically with Every Order</div>
       </div>
       <div class="feat-card">
         <!-- <div class="feat-icon" style="background:rgba(74,222,128,0.12);">📄</div> -->
-        <div class="feat-title">Let Your Branding Shine</div>
+        <div class="feat-title">LET YOUR BRANDING SHINE</div>
         <div class="feat-desc">Impress customers with professional-grade invoices</div>
       </div>
       <div class="feat-card">
         <!-- <div class="feat-icon" style="background:rgba(251,113,133,0.12);">🔢</div> -->
-        <div class="feat-title">Custom Invoice Numbering</div>
+        <div class="feat-title">CUSTOM INVOICE NUMBERING</div>
         <div class="feat-desc">Generate invoice numbers as per government guidelines</div>
       </div>
       <div class="feat-card">
         <!-- <div class="feat-icon" style="background:rgba(14,165,233,0.12);">📦</div> -->
-        <div class="feat-title">Fast, Friendly Support</div>
+        <div class="feat-title">FAST, FRIENDLY SUPPORT</div>
         <div class="feat-desc">Get the support you wish every app came with</div>
       </div>
       <div class="feat-card">
         <!-- <div class="feat-icon" style="background:rgba(251,191,36,0.12);">📊</div> -->
-        <div class="feat-title">GST reports & Invoice exports</div>
+        <div class="feat-title">GST REPORTS & INVOICE EXPORTS</div>
         <div class="feat-desc">Everything you need for tax filing and accounting</div>
       </div>
     </div>
@@ -1719,7 +1721,8 @@
               <a href="https://www.slatesky.in/" target="_blank" rel="noopener noreferrer">
                 https://www.slatesky.in/
               </a>
-            </div>          </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1796,11 +1799,12 @@
           <li>Customizable templates</li>
           <li>Custom invoice numbering</li>
         </ul>
-        <a href="mailto:warpstudio.io@gmail.com" class="btn btn-ghost" style="width:100%;justify-content:center;">Contact Us
+        <a href="mailto:warpstudio.io@gmail.com" class="btn btn-ghost"
+          style="width:100%;justify-content:center;">Contact Us
           →</a>
       </div>
 
-            <div class="price-card reveal reveal-delay-3">
+      <div class="price-card reveal reveal-delay-3">
         <div class="price-plan">PRO</div>
         <div class="price-amount"><sup>₹</sup>3999</div>
         <div class="price-period">per month</div>
@@ -1810,7 +1814,8 @@
           <li>Priority Support</li>
           <li>Custom Integrations</li>
         </ul>
-        <a href="mailto:warpstudio.io@gmail.com" class="btn btn-ghost" style="width:100%;justify-content:center;">Contact Us
+        <a href="mailto:warpstudio.io@gmail.com" class="btn btn-ghost"
+          style="width:100%;justify-content:center;">Contact Us
           →</a>
       </div>
 
@@ -1851,8 +1856,6 @@
           <li><a href="#app">GST Invoices India</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#">Changelog</a></li>
-          <li><a href="#">Documentation</a></li>
         </ul>
       </div>
       <div>
@@ -1865,18 +1868,16 @@
       <div>
         <div class="footer-col-title">Resources</div>
         <ul class="footer-links">
-          <li><a href="#">GST Guide for Shopify</a></li>
-          <li><a href="#">HSN Code Lookup</a></li>
+          <li><a href="https://cleartax.in/s/gst-guide-introduction">GST Guide for Shopify</a></li>
+          <li><a href="https://cleartax.in/s/gst-hsn-lookup">HSN Code Lookup</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <div class="footer-copy">© 2024 Warp Studio. All rights reserved. Made with ⚡ in India.</div>
+      <div class="footer-copy">© 2024 Warp Studio. All rights reserved. Made with ❤️ in India.</div>
       <div class="footer-legal">
         <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Refund Policy</a>
       </div>
     </div>
   </footer>
@@ -1930,10 +1931,10 @@
         if (e.isIntersecting) {
           const items = e.target.querySelectorAll('.stat-item');
           const data = [
-          { val: 50, suffix: '+' },
-          { val: 22,   suffix: 'K+' },
-          { val: 5.0, suffix: '★' },
-          { val: 100, suffix: '%' }
+            { val: 50, suffix: '+' },
+            { val: 22, suffix: 'K+' },
+            { val: 5.0, suffix: '★' },
+            { val: 100, suffix: '%' }
           ];
           items.forEach((item, i) => {
             if (data[i]) {
